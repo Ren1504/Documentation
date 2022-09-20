@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "styles.css">
+    <title>Technical Documentation</title>
+</head>
+<body>
+
+    <div class = 'sidebar'>
+        <nav id = "navbar">
+            <div class="section">
+                <header id = "sidehead"> Python Documentation </header>
+                <div class="item"><a  class = 'nav-link'href = "#Introduction">Introduction</a></div>
+                 <div class="item"><a class = 'nav-link' href = "#Variables">Variables</a></div>
+                 <div class="item"><a class = 'nav-link' href = "#Control_Flow">Control Flow</a></div>
+                 <div class="item"><a class = 'nav-link' href = "#Loops">Loops</a></div>
+                 <div class="item"><a class = 'nav-link' href = "#References">References</a></div>
+              </div>
+        </nav>
+    </div>
+    <main id = "main-doc" style = 'position: sticky'>
+        <section class = 'main-section' id = 'Introduction'>
+            <header class = 'section-head'>Introduction</header>
+            <article>               
+                <p>
+                    Python is an easy to learn, powerful programming language. It has efficient high-level data structures
+                    and a simple but effective approach to object-oriented programming.
+                    Python’s elegant syntax and dynamic typing, together with its interpreted nature
+                    , make it an ideal language for scripting and rapid application development
+                    in many areas on most platforms.
+                </p>
+
+                <p>
+                    The Python interpreter and the extensive standard library are freely available
+                    in source or binary form for all major platforms from the Python web site,
+                    <a href = "https://www.python.org/" >https://www.python.org/</a>, and may be freely distributed. The same site also
+                    contains distributions of and pointers to many free third party Python modules,
+                    programs and tools, and additional documentation.
+                </p>
+
+                <p>
+                    <h3> What can Python do? </h3>
+                <ul>
+                    <li>Python can be used on a server to create web applications.</li>
+                    <li>Python can be used alongside software to create workflows.</li>
+                    <li>Python can connect to database systems. It can also read and modify files.</li>
+                    <li>Python can be used to handle big data and perform complex mathematics.</li>
+                    <li>Python can be used for rapid prototyping, or for production-ready software development.</li>
+                </ul>
+                </p>
+
+            </article>
+        </section>
+
+        <section class = 'main-section'id = 'Variables'>
+            <header class = 'section-head'> Variables </header>
+            <article>                
+                <p>
+                    Python Variable is containers which store values.
+                    Python is not “statically typed”. We do not need to declare variables
+                    before using them or declare their type.
+                    A variable is created the moment we first assign a value to it.
+                    A Python variable is a name given to a memory location.
+                    It is the basic unit of storage in a program.
+                </p>
+
+                <p>
+                    <h3> Rules for assigning a variable </h3>
+                    <ul>
+                        <li>A variable name must start with a letter or the underscore character.</li>
+                        <li>A variable name cannot start with a number.</li>
+                        <li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ ).</li>
+                        <li>Variable names are case-sensitive (name, Name and NAME are three different variables).</li>
+                        <li>The reserved words(keywords) cannot be used naming the variable.</li>
+                    </ul>
+
+                    <div class = 'mkl'>
+                    <code>                        
+                         # An integer assignment<br>
+                         age = 45 <br> <br>                                         
+                         # A floating point<br>
+                         salary = 1456.8   <br>   <br>                                      
+                         # A string<br>
+                         name = "John"  <br>  <br>                                        
+                         print(age)<br>
+                         print(salary)<br>
+                         print(name)<br>
+                    </code>
+                    </div>
+
+                    <div class = 'mkl'>
+                        <code>
+                            45<br>
+                            1456.8<br>
+                            John<br>
+                        </code>
+                    </div>
+                </p>
+            </article>
+        </section>
+
+        <section class = 'main-section'id = 'Control_Flow'>
+            <header class = 'section-head'> Control Flow </header>
+            <article>                
+                <p>
+                    There comes situations in real life when we need to make some decisions and based on these decisions, we decide what should we do next.
+                    Similar situations arise in programming also where we need to make some decisions and based on these decisions we will execute the next block of code.
+                    Decision-making statements in programming languages decide the direction of the flow of program execution. 
+                    In Python, if-else elif statement is used for decision making.
+                </p>
+
+                <h3> if statement </h3>
+                <p>
+                    if statement is the most simple decision-making statement. It is used
+                    to decide whether a certain statement or block of statements will be executed
+                    or not i.e if a certain condition is true then a block of statement
+                    is executed otherwise not.
+                    
+                    <div class = 'mkl'>
+                        
+                        
+                        <pre><code>if condition:
+   statement1
+statement2
+
+# Here if the condition is true, if block 
+# will consider only statement1 to be inside 
+# its block. </code></pre>
+                       
+                    </div>
+                </p>
+
+                <h3> if-else statement</h3>
+                <p>
+                    The if statement alone tells us that if a condition is true
+                    it will execute a block of statements and if the condition is false it won’t.
+                    But what if we want to do something else if the condition is false. Here comes the else statement. We can use the else statement with
+                    if statement to execute a block of code when the condition is false.
+
+                    <div class = 'mkl'>
+                        <pre><code>if (condition):
+    # Executes this block 
+    # if condition is true
+    
+else:
+    # Executes this block if
+    # condition is false</code></pre>
+                    </div>
+                </p>
+            </article>
+        </section>
+
+        <section class = 'main-section'id = 'Loops'>
+            <header class = 'section-head'> Loops </header>
+            <article>                
+                <p>
+                    Python programming language provides the following types
+                    of loops to handle looping requirements. Python provides three ways for executing the loops. While all the ways provide similar basic functionality,
+                    they differ in their syntax and condition checking time.
+                </p>
+
+                <h3> for Loop</h3>
+                <p>
+                    For loops are used for sequential traversal. For example: traversing a list or
+                    string or array etc. In Python, there is no C style for loop.
+                    There is “for in” loop which is similar to for each loop in other languages.
+                    Let us learn how to use for in loop for sequential traversals.
+                <div class = 'mkl'>
+                <pre><code>for iterator_var in sequence:
+    statements(s)</code></pre>
+</div>
+                </p>
+
+                <h3>while loop</h3>
+                <p>
+                    In python, while loop is used to execute a block of
+                    statements repeatedly until a given condition is satisfied.
+                    And when the condition becomes false,
+                    the line immediately after the loop in the program is executed.
+
+                    <div class = 'mkl'>
+                        <pre><code>while expression:
+    statement(s)</code></pre>
+                    </div>
+                </p>
+            </article>
+        </section>
+
+        <section class = 'main-section'id = 'References'>
+            <header class = 'section-head'> References </header>
+            <article>                
+                <p>
+                    Notes taken from the websites <a href ="https://www.geeksforgeeks.org/">GeeksForGeeks</a>
+                    and <a href = "https://docs.python.org/3/">Python documentation</a>
+                </p>
+            </article>
+        </section>
+
+    </main>
+</body>
+</html>

@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  background: #ecf0f1;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+  height:100vh;
+  width: 300px;
+  font-family: raleway;
+  background: #34495e;
+  position: fixed;
+}
+
+.item {
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+  margin-top: 10px;
+  border-top: 1px solid;
+  border-color:white;
+  width: 100%;
+
+}
+
+.item:hover {
+    cursor:pointer;
+    background-color:#1576d7;
+    font-weight: bold;
+    font-size: 23px;
+    color:rgb(212, 203, 203);
+}
+
+.section {
+  padding: 22px;
+}
+
+#sidehead{
+    text-align: center;
+    font-weight: bold;
+    font-size: 27px;
+    position:relative;
+   padding-bottom:25px;
+   cursor:pointer;
+}
+
+#main-doc {
+    position: absolute;
+    margin-left: 310px;
+    padding: 20px;
+    margin-bottom: 110px;
+}
+
+.section-head {
+    text-align: left;
+    font-weight: bold;
+    font-size: 27px;
+    position:relative;
+   padding-bottom:15px;
+   cursor:pointer;
+   font-size: 40px;
+}
+
+article{
+    font-size: 20px;
+}
+
+.main-section{
+    padding-bottom:50px;
+}
+
+.mkl{
+  background-color: rgb(199, 212, 212);
+  text-align:left;
+  max-width: 700px;
+  border-radius: 12px;
+  padding: 10px;
+  margin-top: 50px;
+}
+
+.section a{
+  text-decoration: none;
+  color:inherit;
+}
+
+p, ul{
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+@media (max-width:768px){
+
+  .sidebar{
+    height:1000px;
+  }
+  
+}
